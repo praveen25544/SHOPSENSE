@@ -1,8 +1,7 @@
 module.exports = {
-  preset: 'ts-jest',
   testEnvironment: 'node',
-  testMatch: ['**/tests/**/*.test.ts'],
-  collectCoverageFrom: ['src/**/*.ts', '!src/server.ts'],
+  testMatch: ['**/tests/**/*.test.js'],
+  collectCoverageFrom: ['src/**/*.js', '!src/server.js'],
   coverageThreshold: { global: { lines: 70 } },
-  setupFilesAfterFramework: [],
+  setupFilesAfterEnv: [],
 };
